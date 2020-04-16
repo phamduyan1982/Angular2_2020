@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="/scripts/angular.js"></script>
+    <script src="/session6/script.js"></script>
+    <title></title>
+</head>
+<body ng-app="TEDU">
+    <div ng-controller="handleEventController">
+        <table>
+            <tr>
+                <td> Name</td>
+                <td> Like</td>
+                <td> DisLike</td>
+                <td> Action</td>
+            </tr>
+            <tr ng-repeat="technology in technologies">
+                <td>{{technology.Name}}</td>
+                <td>{{technology.Likes}}</td>
+                <td>{{technology.Dislikes}}</td>
+                <td>
+                    <button>Like</button>
+                    <button>DisLike</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
