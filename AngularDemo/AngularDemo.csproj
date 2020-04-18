@@ -72,6 +72,8 @@
     <Content Include="Global.asax" />
     <Content Include="session10\app.js" />
     <Content Include="session10\index.html" />
+    <Content Include="session11\app.js" />
+    <Content Include="session11\index.html" />
     <Content Include="session6\hander_event.html" />
     <Content Include="intro.html" />
     <Content Include="module_controller.html" />
