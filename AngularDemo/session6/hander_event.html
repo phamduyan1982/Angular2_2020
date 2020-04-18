@@ -13,15 +13,17 @@
                 <td> Name</td>
                 <td> Like</td>
                 <td> DisLike</td>
+                <td> Minus</td>
                 <td> Action</td>
             </tr>
             <tr ng-repeat="technology in technologies">
                 <td>{{technology.Name}}</td>
                 <td>{{technology.Likes}}</td>
                 <td>{{technology.Dislikes}}</td>
+                <td>{{technology.Minus}}</td>
                 <td>
-                    <button>Like</button>
-                    <button>DisLike</button>
+                    <button ng-click="increaseLike(technology)">Like</button>
+                    <button ng-click="increaseDislike(technology)">DisLike</button>
                 </td>
             </tr>
         </table>

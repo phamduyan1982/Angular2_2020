@@ -1,10 +1,18 @@
 ﻿var app = angular.module('TEDU', []);
 app.controller('handleEventController', ['$scope',function ($scope) {
     var technologies = [
-        { Name: "C#", Likes: 0, Dislikes: 0 },
-        { Name: "ASP.NET", Likes: 0, Dislikes: 0 },
-        { Name: "SQL server", Likes: 0, Dislikes: 0 },
-        { Name: "AngulerJS", Likes: 0, Dislikes: 0 }
+        { Name: "C#", Likes: 0,Minus:0, Dislikes: 0 },
+        { Name: "ASP.NET", Likes: 0, Minus: 0, Dislikes: 0 },
+        { Name: "SQL server", Likes: 0, Minus: 0, Dislikes: 0 },
+        { Name: "AngulerJS", Likes: 0, Minus: 0, Dislikes: 0 }
     ];
     $scope.technologies = technologies;
+    $scope.increaseLike = function (technology) {
+        technology.Likes++;
+        technology.Minus = technology.Likes - technology.Dislikes;
+    }
+    $scope.increaseDislike = function (technology) {
+        technology.Dislikes++;
+        technology.Minus = technology.Likes - technology.Dislikes;
+    };
 }]);
