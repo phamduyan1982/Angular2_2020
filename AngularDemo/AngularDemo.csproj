@@ -70,6 +70,8 @@
     <Content Include="customdirective.html" />
     <Content Include="directive.html" />
     <Content Include="Global.asax" />
+    <Content Include="session10\app.js" />
+    <Content Include="session10\index.html" />
     <Content Include="session6\hander_event.html" />
     <Content Include="intro.html" />
     <Content Include="module_controller.html" />
