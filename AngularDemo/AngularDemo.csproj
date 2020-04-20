@@ -80,6 +80,9 @@
     <Content Include="session13\index.html" />
     <Content Include="session13\listEmployeeView.html" />
     <Content Include="session13\tableEmployeeView.html" />
+    <Content Include="session14\app.js" />
+    <Content Include="session14\Employees.asmx" />
+    <Content Include="session14\employeeView.html" />
     <Content Include="session6\hander_event.html" />
     <Content Include="intro.html" />
     <Content Include="module_controller.html" />
@@ -105,6 +108,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="session14\EmployeeModel.cs" />
+    <Compile Include="session14\Employees.asmx.cs">
+      <DependentUpon>Employees.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="../scripts/angular.js"></script>
+    <script src="/session14/app.js"></script>
+    <title></title>
+</head>
+<body ng-app="app">
+    <div ng-controller="consumWsCtrl">
+        <table>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Salary</td>
+                <td>Birth Day</td>
+            </tr>
+
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.Id}}</td>
+                <td>{{employee.Name}}</td>
+                <td>{{employee.Gender}}</td>
+                <td>{{employee.Salary}}</td>
+                <td>{{employee.BirthDay}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
